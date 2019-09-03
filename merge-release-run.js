@@ -45,6 +45,6 @@ const run = async () => {
     version = 'minor'
   }
 
-  process.stdout.write(execSync(`npx np ${version} --yarn=false`))
+  process.stdout.write(execSync(`npx np ${version} --yarn=false --no-release-draft`))
 }
 run().catch(console.error)
