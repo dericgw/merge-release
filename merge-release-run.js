@@ -45,11 +45,6 @@ const run = async () => {
     version = 'minor'
   }
 
-  let current = execSync(`npm view ${pkg.name} version`).toString()
-  process.stdout.write(execSync(`npm version --allow-same-version=true --git-tag-version=false ${current} `))
-  let newVersion = execSync(`npm version --git-tag-version=false ${version}`).toString()
-  console.log(newVersion)
-  process.stdout.write(execSync(`npm publish --access=public`))
-  process.stdout.write(execSync(`git checkout package.json`))
+  process.stdout.write(execSync(`npx np ${version} --yarn=false`))
 }
 run().catch(console.error)

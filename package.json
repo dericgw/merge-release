@@ -1,7 +1,7 @@
 {
   "name": "merge-release",
-  "version": "0.0.0-dev",
-  "description": "",
+  "version": "0.1.0",
+  "description": "GitHub Action for automated npm publishing.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,21 +10,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mikeal/auto-release.git"
+    "url": "git+https://github.com/dericgw/merge-release.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mikeal/auto-release/issues"
+    "url": "https://github.com/dericgw/merge-release/issues"
   },
-  "homepage": "https://github.com/mikeal/auto-release#readme",
+  "homepage": "https://github.com/dericgw/merge-release#readme",
   "dependencies": {
     "bent": "1.5.13",
     "simple-git": "^1.113.0",
     "yargs": "^12.0.5"
   },
-  "devDependencies": {
-    "standard": "^12.0.1"
-  }
+  "main": "merge-release-run.js"
 }
